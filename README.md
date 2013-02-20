@@ -1,4 +1,6 @@
-# Mathias’s dotfiles
+# Mark’s dotfiles
+
+## Forked from: https://github.com/mathiasbynens/dotfiles
 
 ## Installation
 
