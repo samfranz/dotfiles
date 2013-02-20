@@ -281,6 +281,16 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 ###############################################################################
+# Sublime Text                                                                #
+###############################################################################
+# Setup subl terminal alias
+# http://www.sublimetext.com/docs/2/osx_command_line.html
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+# The above line doesn't work if using RVM
+# via stackoverflow: http://stackoverflow.com/a/11287024/406
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/.rvm/bin/subl
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
