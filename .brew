@@ -105,5 +105,8 @@ installcask android-studio
 installcask eclipse-ide
 installcask evernote
 
+brew tap homebrew/versions
+brew install lua52
+
 # Remove outdated versions from the cellar
 brew cleanup
