@@ -39,6 +39,7 @@ brew install git
 brew install imagemagick
 #brew install lynx
 brew install node
+brew install pigz
 brew install rename
 #brew install rhino
 
@@ -46,6 +47,7 @@ brew install tree
 
 #http://www.paulhammond.org/webkit2png/
 brew install webkit2png
+brew install zopfli
 
 brew install rbenv 
 brew install ruby-build
