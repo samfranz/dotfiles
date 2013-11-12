@@ -61,8 +61,22 @@ function installcask() {
 }
 
 installcask dropbox
+installcask google-drive
+
+#DEV TOOLS
+installcask charles
+installcask sourcetree
+installcask sparkinspector
+installcask versions
+installcask testflight
+
+#BROWSWERS
 installcask google-chrome
 installcask google-chrome-canary
+installcask firefox
+
+#Benchmarking
+installcask geekbench
 
 #http://pngmini.com/
 installcask imagealpha
@@ -81,6 +95,12 @@ installcask transmission
 #installcask ukelele
 #installcask virtualbox
 installcask vlc
+installcask handbrake
+
+installcask acorn
+installcask android-studio
+installcask eclipse-ide
+installcask evernote
 
 # Remove outdated versions from the cellar
 brew cleanup
