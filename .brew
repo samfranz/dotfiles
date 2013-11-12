@@ -88,7 +88,10 @@ installcask iterm2
 
 #http://www.mirovideoconverter.com/
 installcask miro-video-converter
+
 installcask sublime-text
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
 installcask the-unarchiver
 #installcask tor-browser
 installcask transmission
