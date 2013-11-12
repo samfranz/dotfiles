@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -26,20 +26,19 @@ brew install wget --enable-iri
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 brew tap josegonzalez/homebrew-php
-brew install php55
+brew install php54
 
 # These two formulae didn’t work well last time I tried them:
 #brew install homebrew/dupes/vim
 #brew install homebrew/dupes/screen
 
-# Install other useful binaries
+# Install everything else
 brew install ack
 #brew install exiv2
 brew install git
 brew install imagemagick
 #brew install lynx
 brew install node
-brew install pigz
 brew install rename
 #brew install rhino
 
@@ -47,14 +46,8 @@ brew install tree
 
 #http://www.paulhammond.org/webkit2png/
 brew install webkit2png
-brew install zopfli
 
-brew install rbenv 
-brew install ruby-build
-##############################################################
-# NATIVE APPS
 # Install native apps
-##############################################################
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
@@ -63,22 +56,8 @@ function installcask() {
 }
 
 installcask dropbox
-installcask google-drive
-
-#DEV TOOLS
-installcask charles
-installcask sourcetree
-installcask sparkinspector
-installcask versions
-installcask testflight
-
-#BROWSWERS
 installcask google-chrome
 installcask google-chrome-canary
-installcask firefox
-
-#Benchmarking
-installcask geekbench
 
 #http://pngmini.com/
 installcask imagealpha
@@ -90,25 +69,13 @@ installcask iterm2
 
 #http://www.mirovideoconverter.com/
 installcask miro-video-converter
-
 installcask sublime-text
-ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-
 installcask the-unarchiver
 #installcask tor-browser
 installcask transmission
 #installcask ukelele
 #installcask virtualbox
 installcask vlc
-installcask handbrake
-
-installcask acorn
-installcask android-studio
-installcask eclipse-ide
-installcask evernote
-
-brew tap homebrew/versions
-brew install lua52
 
 # Remove outdated versions from the cellar
 brew cleanup
