@@ -47,7 +47,7 @@ brew install tree
 #http://www.paulhammond.org/webkit2png/
 brew install webkit2png
 
-brew install rbenv 
+brew install rbenv
 brew install ruby-build
 ##############################################################
 # NATIVE APPS
@@ -57,9 +57,13 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 function installcask() {
-	brew cask install "${@}" 2> /dev/null
+	brew cask install --appdir="/Applications" "${@}" 2> /dev/null
 }
 
+installcask alfred
+installcask sublime-text
+installcask 1password
+installcask macdown
 installcask dropbox
 installcask google-chrome
 installcask google-chrome-canary
@@ -74,13 +78,16 @@ installcask iterm2
 
 #http://www.mirovideoconverter.com/
 installcask miro-video-converter
-installcask sublime-text
+
 installcask the-unarchiver
 #installcask tor-browser
 installcask transmission
 #installcask ukelele
 #installcask virtualbox
 installcask vlc
+
+# Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar
 brew cleanup
