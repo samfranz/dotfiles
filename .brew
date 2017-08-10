@@ -57,6 +57,7 @@ brew tap phinze/homebrew-cask
 brew install brew-cask
 
 function installcask() {
+	echo "Installing ${@}"
 	brew cask install --appdir="/Applications" "${@}" 2> /dev/null
 }
 
@@ -83,7 +84,7 @@ installcask the-unarchiver
 #installcask tor-browser
 installcask transmission
 #installcask ukelele
-#installcask virtualbox
+installcask virtualbox
 installcask vlc
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
