@@ -42,7 +42,6 @@ function installcask() {
 	brew cask install --appdir="/Applications" "${@}" 2> /dev/null
 }
 
-installcask alfred
 installcask sublime-text
 installcask 1password
 installcask macdown
