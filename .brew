@@ -23,8 +23,7 @@ brew install git
 brew install imagemagick
 brew install node
 brew install rename
-
-
+brew install speedtest_cli
 brew install tree
 
 #http://www.paulhammond.org/webkit2png/
@@ -62,9 +61,12 @@ installcask miro-video-converter
 
 installcask the-unarchiver
 installcask transmission
-#installcask ukelele
 installcask virtualbox
 installcask vlc
+installcask paw
+installcask charles					# https://www.charlesproxy.com/
+installcask transmit 				# https://panic.com/transmit/
+installcask tower					# https://www.git-tower.com/mac/
 
 # Filebot - https://www.filebot.net/forums/viewtopic.php?t=2049
 brew cask install filebot --force --appdir=~/Applications
