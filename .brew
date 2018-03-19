@@ -29,11 +29,13 @@ function installcask() {
 }
 
 installcask sublime-text
+installcask visual-studio-code
 installcask sourcetree
 installcask 1password
 installcask macdown
 installcask dropbox
 installcask google-chrome
+installcask encryptme
 
 #http://imageoptim.com/
 installcask imageoptim
