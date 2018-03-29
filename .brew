@@ -36,6 +36,8 @@ installcask macdown
 installcask dropbox
 installcask google-chrome
 installcask encryptme
+installcask istat-menus
+installcask soulver
 
 #http://imageoptim.com/
 installcask imageoptim
@@ -48,6 +50,9 @@ installcask paw
 installcask charles					# https://www.charlesproxy.com/
 installcask transmit 				# https://panic.com/transmit/
 installcask tower					# https://www.git-tower.com/mac/
+
+# Mobile Development
+installcask fastlane
 
 # Filebot - https://www.filebot.net/forums/viewtopic.php?t=2049
 brew cask install filebot --force --appdir=~/Applications

@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 PATH="$HOME/bin:$PATH";
 
+# Fastlane
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 echo '.bash_profile'
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
@@ -10,6 +13,8 @@ if [ -f ~/.profile ]; then
    source ~/.profile
 fi
 
+# Android Home Setup
+export ANDROID_HOME=~/Library/Android/sdk/
 
 # Xcode
 alias simDir="/Users/$(whoami)/Library/Developer/CoreSimulator/Devices/"
