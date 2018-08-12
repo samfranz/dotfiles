@@ -47,7 +47,6 @@ defaults write com.apple.systemuiserver menuExtras -array \
 # Silver   : `0.776500 0.776500 0.776500`
 # Blue     : `0.709800 0.835300 1.000000`
 defaults write NSGlobalDomain AppleHighlightColor -string '0.780400 0.815700 0.858800'
->>>>>>> master
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
