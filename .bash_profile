@@ -13,6 +13,9 @@ if [ -f ~/.profile ]; then
    source ~/.profile
 fi
 
+# docker-compose
+alias ddb='docker-compose down && docker-compose build'
+
 # Android Home Setup
 export ANDROID_HOME=~/Library/Android/sdk/
 
