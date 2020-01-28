@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -32,8 +32,6 @@ installcask sublime-text
 installcask visual-studio-code
 installcask sourcetree
 installcask 1password
-installcask macdown
-installcask dropbox
 installcask google-chrome
 installcask encryptme
 installcask istat-menus
@@ -55,10 +53,18 @@ installcask tower					# https://www.git-tower.com/mac/
 installcask fastlane
 
 # Filebot - https://www.filebot.net/forums/viewtopic.php?t=2049
-brew cask install filebot --force --appdir=~/Applications
+# brew cask install filebot --force --appdir=~/Applications
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
-
+brew cask install \
+    qlcolorcode \
+    qlstephen \
+    qlmarkdown \
+    quicklook-json \
+    qlprettypatch \
+    quicklook-csv \
+    betterzip \
+    webpquicklook \
+    suspicious-package
 # Remove outdated versions from the cellar
 brew cleanup
