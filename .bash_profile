@@ -90,3 +90,9 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 source ~/.bashrc
 
 export PATH
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
