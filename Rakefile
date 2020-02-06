@@ -39,7 +39,7 @@ def create_symlinks
         end
       end
 
-      puts "#{"[SYMLINK]".green} #{source_path} --> #{target_path.yellow}"
+      puts "#{"[SYMLINK]"} #{source_path} --> #{target_path}"
       FileUtils.ln_s(source_path, target_path)
     end
   end
