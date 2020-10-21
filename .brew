@@ -6,13 +6,7 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# Install wget with IRI support
-brew install wget --enable-iri
-
 # Install everything else
-brew install imagemagick
-brew install node
-brew install rename
 brew install speedtest_cli
 brew install tree
 
@@ -25,29 +19,44 @@ brew install brew-cask
 
 function installcask() {
 	echo "Installing ${@}"
-	brew cask install --appdir="/Applications" "${@}" 2> /dev/null
+	brew cask install "${@}" 2> /dev/null
 }
 
-installcask sublime-text
 installcask visual-studio-code
-installcask sourcetree
+installcask sublime-text
+installcask authy
+installcask intel-power-gadget         
+installcask slack
+installcask bartender                  
+installcask istat-menus                
+installcask spotify
+
+## git clients
+installcask fork
+# installcask sourcetree
+# installcask tower					# https://www.git-tower.com/mac/
+
+## HTTP Tools
+installcask paw
+installcask proxyman
+# installcask charles					# https://www.charlesproxy.com/ - Trying to replace with proxyman
+
+installcask google-chrome              
+installcask remote-desktop-manager    
+installcask handbrake                  
+installcask simpholders                
+installcask zoom
+
 installcask 1password
-installcask google-chrome
 installcask encryptme
-installcask istat-menus
 installcask soulver
 
 #http://imageoptim.com/
 installcask imageoptim
 
-installcask the-unarchiver
-installcask transmission
-installcask virtualbox
 installcask vlc
-installcask paw
-installcask charles					# https://www.charlesproxy.com/
+
 installcask transmit 				# https://panic.com/transmit/
-installcask tower					# https://www.git-tower.com/mac/
 
 # Mobile Development
 installcask fastlane

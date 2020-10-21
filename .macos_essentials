@@ -77,6 +77,18 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 # Enable Secondary Click
 defaults write com.apple.driver.AppleHIDMouse Button2 -int 2
 
+# Remove the auto-hiding Dock delay
+defaults write com.apple.dock autohide-delay -float 0
+# Remove the animation when hiding/showing the Dock
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+###############################################################################
+# Dock, Dashboard                                                             #
+###############################################################################
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 
 ###############################################################################
 # Kill affected applications                                                  #
